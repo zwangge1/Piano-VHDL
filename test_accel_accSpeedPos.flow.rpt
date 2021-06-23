@@ -1,0 +1,139 @@
+Flow report for test_accel_accSpeedPos
+Tue Jun 22 22:18:00 2021
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Tue Jun 22 22:18:00 2021       ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                      ; test_accel_accSpeedPos                      ;
+; Top-level Entity Name              ; auto_piano_top                              ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE115F29C7                               ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 6,106 / 114,480 ( 5 % )                     ;
+;     Total combinational functions  ; 6,034 / 114,480 ( 5 % )                     ;
+;     Dedicated logic registers      ; 812 / 114,480 ( < 1 % )                     ;
+; Total registers                    ; 812                                         ;
+; Total pins                         ; 155 / 529 ( 29 % )                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                              ;
++------------------------------------+---------------------------------------------+
+
+
++--------------------------------------------+
+; Flow Settings                              ;
++-------------------+------------------------+
+; Option            ; Setting                ;
++-------------------+------------------------+
+; Start date & time ; 06/22/2021 22:15:11    ;
+; Main task         ; Compilation            ;
+; Revision Name     ; test_accel_accSpeedPos ;
++-------------------+------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                      ;
++-------------------------------------+----------------------------------------+--------------------------------------+----------------+----------------+
+; Assignment Name                     ; Value                                  ; Default Value                        ; Entity Name    ; Section Id     ;
++-------------------------------------+----------------------------------------+--------------------------------------+----------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 154027279383899.162437130906816        ; --                                   ; --             ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --                                   ; --             ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>                               ; --             ; --             ;
+; ENABLE_SIGNALTAP                    ; Off                                    ; --                                   ; --             ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --                                   ; --             ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --                                   ; --             ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --                                   ; --             ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --                                   ; --             ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                             ; --                                   ; --             ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                             ; --                                   ; --             ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --                                   ; auto_piano_top ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --                                   ; auto_piano_top ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --                                   ; auto_piano_top ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --                                   ; --             ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --                                   ; --             ; --             ;
+; PROJECT_IP_REGENERATION_POLICY      ; ALWAYS_REGENERATE_IP                   ; SKIP_REGENERATING_IP_IF_HDL_MODIFIED ; --             ; --             ;
+; SMART_RECOMPILE                     ; On                                     ; Off                                  ; --             ; --             ;
+; TOP_LEVEL_ENTITY                    ; auto_piano_top                         ; test_accel_accSpeedPos               ; --             ; --             ;
+; USE_SIGNALTAP_FILE                  ; stp1.stp                               ; --                                   ; --             ; --             ;
+; VHDL_INPUT_VERSION                  ; VHDL_2008                              ; VHDL_1993                            ; --             ; --             ;
+; VHDL_SHOW_LMF_MAPPING_MESSAGES      ; Off                                    ; --                                   ; --             ; --             ;
++-------------------------------------+----------------------------------------+--------------------------------------+----------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:01:02     ; 1.0                     ; 774 MB              ; 00:01:36                           ;
+; Fitter                    ; 00:00:58     ; 1.0                     ; 1377 MB             ; 00:01:17                           ;
+; Assembler                 ; 00:00:13     ; 1.0                     ; 555 MB              ; 00:00:12                           ;
+; TimeQuest Timing Analyzer ; 00:00:11     ; 1.2                     ; 710 MB              ; 00:00:12                           ;
+; EDA Netlist Writer        ; 00:00:16     ; 1.0                     ; 562 MB              ; 00:00:15                           ;
+; Total                     ; 00:02:40     ; --                      ; --                  ; 00:03:32                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; Lsen-PC          ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; Lsen-PC          ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; Lsen-PC          ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; Lsen-PC          ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; Lsen-PC          ; Windows 7 ; 6.1        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off test_accel -c test_accel_accSpeedPos
+quartus_fit --read_settings_files=off --write_settings_files=off test_accel -c test_accel_accSpeedPos
+quartus_asm --read_settings_files=off --write_settings_files=off test_accel -c test_accel_accSpeedPos
+quartus_sta test_accel -c test_accel_accSpeedPos
+quartus_eda --read_settings_files=off --write_settings_files=off test_accel -c test_accel_accSpeedPos
+
+
+

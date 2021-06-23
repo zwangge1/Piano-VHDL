@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "windows64",
+		"os_name" : "Windows 7",
+		"os_version" : "6.1"
+	},
+	"error" : {
+		"executable" : "quartus",
+		"comment" : "not_applicable",
+		"error_message" : "Invalid operation",
+		"source_file" : "/quartus/pgm/pgme/pgme_sram_algorithm.cpp",
+		"line" : "189",
+		"stack_trace" : "\t0x7fef5e1ba81: pgm_pgme + 0x9ba81 (?set_active_device@PGME_JTAG_SRAM_ALGORITHM@@MEAA_NII@Z + 0x211)\n\t0x7fef5e25b92: pgm_pgme + 0xa5b92 (?status@PGME_JTAG_SRAM_ALGORITHM@@UEAAII@Z + 0xc2)\n\t0x7fef5de7764: pgm_pgme + 0x67764 (?jtag_program@PGME_JTAG_SRAM_ALGORITHM@@IEAA_NPEAVPGMIO_BIT_VECTOR@@PEAKI@Z + 0x6e4)\n\t0x7fef5dfa4ea: pgm_pgme + 0x7a4ea (?program@PGME_JTAG_SRAM_ALGORITHM@@QEAAIIPEAK@Z + 0x1ba)\n\t0x7fef5db7832: pgm_pgme + 0x37832 (?engage@PGME_PROGRAMMER@@QEAA_NW4PGM_PROGRAMMING_MODE@@PEAV?$vector@PEAVPGM_CHAIN_ELEMENT@@V?$allocator@PEAVPGM_CHAIN_ELEMENT@@@std@@@std@@_NPEAK@Z + 0xd22)\n\t0x7fef5c2d425: pgm_pgmwq + 0x7d425 (?run@PGMWQ_PROGRAMMING_THREAD@@MEAAXXZ + 0x25)\n\t 0x744b95b7: QtCore4 + 0x295b7 (?start@QThread@@QEAAXW4Priority@1@@Z + 0x427)\n\t0x7fef9964f7e: MSVCR120 + 0x24f7e (_beginthreadex + 0x106)\n\t0x7fef9965125: MSVCR120 + 0x25125 (_endthreadex + 0x191)\n\t 0x771ef56c: kernel32 + 0x1f56c (BaseThreadInitThunk + 0xc)\n\t 0x77323280: ntdll + 0x33280 (RtlUserThreadStart + 0x20)\n",
+		"subsystem" : "PGME"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "17.1.1",
+		"build" : "593",
+		"edition" : "Lite Edition"
+	}
+}

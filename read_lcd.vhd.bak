@@ -1,0 +1,46 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_ARITH.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+
+
+entity read_lcd is
+
+  port (
+    clk              : in  std_logic;
+    reset            : in  std_logic;
+    spi_busy         : in  std_logic;
+    data_from_spi    : in  std_logic_vector(7 downto 0);
+    start_spi        : out std_logic;
+    spi_rw           : out std_logic;
+    link_busy        : out std_logic;
+    spi_addr         : out std_logic_vector(6 downto 0);
+    data_to_spi      : out std_logic_vector(7 downto 0);
+    out_reg_en_bus   : out std_logic;
+    accel_data_ready : out std_logic
+    );
+	 
+end read_lcd;
+
+ARCHITECTURE trans OF read_lcd IS
+
+  component accel_kx224_ctrl
+    port (
+    clk              : in  std_logic;
+    reset            : in  std_logic;
+    spi_busy         : in  std_logic;
+    data_from_spi    : in  std_logic_vector(7 downto 0);
+    start_spi        : out std_logic;
+    spi_rw           : out std_logic;
+    link_busy        : out std_logic;
+    spi_addr         : out std_logic_vector(6 downto 0);
+    data_to_spi      : out std_logic_vector(7 downto 0);
+    out_reg_en_bus   : out std_logic;
+    accel_data_ready : out std_logic
+    );
+  end component;
+  
+   signal spi_busy    : std_logic;
+   signal ss_int      : std_logic;
+   signal start_spi   : std_logic;
+   signal data_to_spi : std_logic_vector(23 downto 0);

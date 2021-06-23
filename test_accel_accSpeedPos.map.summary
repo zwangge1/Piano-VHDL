@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Jun 22 22:16:12 2021
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : test_accel_accSpeedPos
+Top-level Entity Name : auto_piano_top
+Family : Cyclone IV E
+Total logic elements : 6,110
+    Total combinational functions : 6,032
+    Dedicated logic registers : 812
+Total registers : 812
+Total pins : 155
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1
